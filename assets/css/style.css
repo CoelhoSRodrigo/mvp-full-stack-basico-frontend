@@ -36,7 +36,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(8, 100, 176);
+    background-color: rgb(8, 176, 145);
     color: white;
     letter-spacing: 1px;
     font-size: 1.5em;
@@ -62,7 +62,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:  rgb(8, 100, 176);
+    background-color:  rgb(8, 176, 145);
     color: white;
     box-shadow: 1px 1px 5px grey;
     letter-spacing: 1px;
