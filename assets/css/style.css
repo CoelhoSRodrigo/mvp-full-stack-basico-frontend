@@ -1,0 +1,333 @@
+/* -------------------------------------------- */
+/* Definições globais para a aplicação - INÍCIO */
+/* -------------------------------------------- */
+
+/* Importe da fonte utilizada no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições de cor de fundo do body */
+body {
+    background: rgb(152,152,152);
+    background: linear-gradient(6deg, rgba(152,152,152,0.2763306005996149) 0%, rgba(255,255,255,0) 100%); 
+}
+
+/* Definição da altura do bloco principal da aplicação */
+main {
+    height: 80vh;
+}
+
+/* ----------------------------------------- */
+/* Definições globais para a aplicação - FIM */
+/* ----------------------------------------- */
+
+/* ----------------------------------------- */
+/* Definições do header da aplicação - INÍCIO*/
+/* ----------------------------------------- */
+
+#sectionTituloDaPagina {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 100, 176);
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    padding: 10px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#tituloDaPagina {
+    border-bottom: solid 1px white;
+    padding: 5px;
+}
+
+/* -------------------------------------- */
+/* Definições do header da aplicação - FIM*/
+/* -------------------------------------- */
+
+/* ----------------------------------------- */
+/* Definições do rodapé da aplicação - INÍCIO*/
+/* ----------------------------------------- */
+
+#sectionFooter {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgb(8, 100, 176);
+    color: white;
+    box-shadow: 1px 1px 5px grey;
+    letter-spacing: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#tituloDoFooter {
+    border-bottom: solid 1px white;
+    padding: 5px;
+}
+
+/* -------------------------------------- */
+/* Definições do rodapé da aplicação - FIM*/
+/* -------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Blocos para tratar a primeira seção da aplicação - INÍCIO*/
+/* -------------------------------------------------------- */
+
+#sectionInput {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+#grupoInputs {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#grupoBusca {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#inputBuscar {
+    border: solid 1px rgba(11, 110, 192, 0.808);
+    width: 80%;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+/* ----------------------------------------------------- */
+/* Blocos para tratar a primeira seção da aplicação - FIM*/
+/* ----------------------------------------------------- */
+
+/* ------------------------------------------------------- */
+/* Blocos para tratar a segunda seção da aplicação - INÍCIO*/
+/* ------------------------------------------------------- */
+
+#sectionNovaTarefa {
+    padding: 15px 15px 0 15px;
+    display: none;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+.novaTarefa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px rgba(11, 110, 192, 0.808);
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px grey;
+    width: 90%;
+    padding: 15px;
+}
+
+#novaTarefaFormContainer {
+    display: inline;
+    text-align: end;
+    width: 85%;
+}
+
+.inputTitulo {
+    border: solid 1px rgba(11, 110, 192, 0.808);
+    width: 30%;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.inputDescricao {
+    margin-left: 10px;
+    border: solid 1px rgba(11, 110, 192, 0.808);
+    width: 40%;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+/* ---------------------------------------------------- */
+/* Blocos para tratar a segunda seção da aplicação - FIM*/
+/* ---------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+/* Blocos para tratar a terceira seção da aplicação - INÍCIO*/
+/* -------------------------------------------------------- */
+
+/* Colunas da tabela:
+0 -> ID
+1 -> Título
+2 -> Descrição
+3 -> Data da Criação
+4 -> Data de Encerramento
+5 -> Status
+6 -> Ação ENCERRAR
+7 -> Ação DELETAR */
+
+#sectionTableList {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#tableList {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#tableList th, td {
+    border: solid 1px grey;
+}
+
+#tableList th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:  rgba(11, 110, 192, 0.808);
+    color: white;
+    font-size: 1.1em;
+}
+    
+#tableList td {
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.td-0 {
+    width: 4%;
+}
+
+.td-1 {
+    width: 15%;
+}
+
+.td-2 {
+    width: 30%;
+}
+
+.td-6, .td-7 {
+    text-align: center;
+    width: 12%;    
+}
+
+#tableBody tr:hover {
+    background-color: #adcff1;
+}
+
+/* ----------------------------------------------------- */
+/* Blocos para tratar a terceira seção da aplicação - FIM*/
+/* ----------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* Blocos para tratar as definições dos botões da aplicação - INÍCIO*/
+/* ---------------------------------------------------------------- */
+
+.btn {
+    padding: 4px 15px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+    color: white;
+}
+
+.btnAdd {
+    background-color: #198754;
+    /* width: 10%; */
+}
+
+.btnAdd:hover {
+    background-color: #166e45;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btnSalvar {
+    background-color: #198754;
+    margin-left: 10px;
+}
+
+.btnSalvar:hover {
+    background-color: #166e45;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btnCancelar {
+    background-color: #0d6efd;
+    margin-left: 10px;
+}
+
+.btnCancelar:hover {
+    background-color: #0860e3;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btnBusca {
+    background-color: #0d6efd;
+    width: 10%;
+}
+
+.btnBusca:hover {
+    background-color: #0860e3;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btnReset {
+    background-color: #757b81;
+    width: 10%;
+}
+
+.btnReset:hover {
+    background-color: #454748;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btnEncerrar {
+    background-color: #fd7e14;
+}
+
+.btnEncerrar:hover {
+    background-color: #bf6113;
+    cursor: pointer;
+}
+
+.btnExcluir {
+    background-color: #dc3545;
+}
+
+.btnExcluir:hover {
+    background-color: #a92835;
+    cursor: pointer;
+}
+
+.btnDisabled {
+    background-color: #adb5bd;
+}
+
+.btnDisabled:hover {
+    background-color: #adb5bd;
+}
+
+/* ------------------------------------------------------------- */
+/* Blocos para tratar as definições dos botões da aplicação - FIM*/
+/* ------------------------------------------------------------- */

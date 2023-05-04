@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <title>Gestão de Tarefas</title>
+</head>
+<body>
+    <!-- Criação do header da aplicação -->
+    <header>
+        <section id="sectionTituloDaPagina">
+            <h1 id="tituloDaPagina">Gestão de Tarefas</h1>
+        </section>
+    </header>
+    <!-- Criação do bloco principal da aplicação -->
+    <main>
+        <!-- Criação da primeira seção da aplicação: Grupo de Inputs para busca e botão de inclusão -->
+        <section id="sectionInput">
+            <div id="grupoInputs">
+                <button class="btn btnAdd" onclick="mostrarForm()">
+                    Add Tarefa
+                </button>
+                <div id="grupoBusca">
+                    <input type="text" id="inputBuscar" placeholder="Busque por Título...">
+                    &nbsp&nbsp
+                    <button class="btn btnBusca" onclick="buscaPorTitulo()">Buscar</button>
+                    &nbsp&nbsp
+                    <button class="btn btnReset" id="" onclick="refreshList('tarefas')">Reset</button>
+                </div>
+            </div>
+        </section>
+        <!-- Criação da segunda seção da aplicação: Formulário para inclusão de novas tarefas  -->
+        <section id="sectionNovaTarefa">    
+            <div class="novaTarefa">   
+                <h3>Add tarefa</h3>
+                <span id="novaTarefaFormContainer">
+                    <form class="">
+                        <input type="text" id="inputTitulo" class="inputTitulo" placeholder="Insira o título">
+                        <input type="text" id="inputDescricao" class="inputDescricao" placeholder="Insira a descrição">
+                        <input type="button" value="Salvar" class="btn btnSalvar" onclick="salvarTarefa()">
+                        <input type="button" value="Cancelar" class="btn btnCancelar" onclick="esconderForm()">
+                    </form>
+                </span>
+            </div>
+        </section>
+        <!-- Criação da terceira seção da aplicação: Tabela com a lista de tarefas existentes no banco de dados -->
+        <section id="sectionTableList">
+            <table id="tableList">
+                <thead>
+                    <tr>
+                        <th id="th_Id">ID</th>
+                        <th id="th_Titulo">Título</th>
+                        <th id="th_Descricao">Descrição</th>
+                        <th id="th_Data_Criacao">Criação</th>
+                        <th id="th_Data_Encerramento">Encerr.</th>
+                        <th id="th_Status">Status</th>
+                        <th id="th_Actions" colspan="2">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">                                                                                                                                                                                                                                                                                                                                                                                                           
+                </tbody>
+            </table>                                                                                                         
+        </section>
+    </main>
+    <!-- Criação do rodapé da aplicação -->
+    <footer>
+        <section id="sectionFooter">
+            <h2 id="tituloDoFooter">PUC RIO - MVP da Sprint 1</h2>
+        </section>
+    </footer>
+<!-- Carregamento do arquivo com as funções javascript -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
